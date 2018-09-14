@@ -1,0 +1,56 @@
+button {
+	width: 60px;
+	height: 60px;
+	font-size: 30px;
+	border-radius: 50%;
+	border: 3px grey solid;
+	vertical-align: middle;
+	box-shadow: 0px 3px 8px #aaa, inset 0px 2px 3px #fff;
+}
+
+button:enabled{
+	background-color: goldenrod;
+}
+
+.player_one button {
+	color: blue;
+}
+
+.player_two button {
+	color: red;
+}
+
+body {
+  width: 800px;
+  margin: auto;
+  font-size: 28px;
+}
+
+.wrapper {
+	display: grid;
+	grid-gap: 10px;
+	grid-template-columns: 1fr 1fr;
+	grid-template-areas: "header      header"
+	                     "player_one  player_two"
+	                     "game_status game_status";
+}
+
+.header {
+	grid-area: header;
+	text-align: center;
+}
+
+.player_one {
+	grid-area: player_one;
+	text-align: center;
+}
+
+.player_two {
+	grid-area: player_two;
+	text-align: center;
+}
+
+.game_status {
+	grid-area: game_status;
+	text-align: center;
+}
